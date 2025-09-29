@@ -64,13 +64,12 @@ p, .lead, .section-subtitle {font-size:clamp(.95rem, 1.15vw, 1.05rem);}
 }
 
 /* Navigation */
-.navbar {
+ .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    /* Updated to new primary brand color */
     background: var(--about-primary);
-    padding: 1rem 0; /* horizontal padding handled by inner wrapper */
+    padding: .35rem 0; /* even slimmer */
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 1000;
     display: flex;
@@ -114,7 +113,22 @@ p, .lead, .section-subtitle {font-size:clamp(.95rem, 1.15vw, 1.05rem);}
     text-decoration: none;
 }
 .nav-brand {position:relative; display:flex; align-items:center; gap:.75rem;}
-.nav-brand img {border-radius:50%; background:#f5f5f5; padding:1rem; box-shadow:0 6px 16px rgba(0,0,0,0.12); height:clamp(70px, 8vw, 99px); max-height:99px; width:auto; aspect-ratio:1/1; object-fit:cover; position:relative; top:20px; /* sized fluidly */}
+.nav-brand img {
+border-radius: 50%;
+    background: #f5f5f5;
+    padding: 0.5rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    height: clamp(70px, 8vw, 61px);
+    max-height: 99px;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    position: relative;
+    top: 6px;
+}
+
+
+
 .nav-brand .logo-font {font-size:1.4rem; font-weight:600; color:#ffffff; letter-spacing:.5px;}
 
 @media (max-width: 900px){
@@ -122,15 +136,15 @@ p, .lead, .section-subtitle {font-size:clamp(.95rem, 1.15vw, 1.05rem);}
     .nav-brand .logo-font {font-size:1.15rem;}
 }
 @media (max-width: 780px){
-    .nav-brand img {height:72px; max-height:72px; top:6px; padding:.85rem;}
+    .nav-brand img {height:70px; max-height:70px; top:0; padding:.65rem;}
     .nav-brand .logo-font {font-size:1.05rem;}
     .nav-menu {gap:1.25rem;}
 }
 @media (max-width: 560px){
-    .nav-brand img {height:64px; max-height:64px; top:4px; padding:.75rem;}
+    .nav-brand img {height:60px; max-height:60px; top:0; padding:.55rem;}
     .nav-brand .logo-font {display:none;} /* hides text for space */
     .nav-menu {gap:.75rem;}
-    .nav-menu li a {padding:0.45rem .9rem; font-size:.8rem;}
+    .nav-menu li a {padding:0.35rem .85rem; font-size:.78rem;}
 }
 
 .nav-toggle {
@@ -151,11 +165,10 @@ p, .lead, .section-subtitle {font-size:clamp(.95rem, 1.15vw, 1.05rem);}
     padding: 0 1.25rem;
 }
 
-.nav-menu li a {
+ .nav-menu li a {
     color: var(--white);
     text-decoration: none;
-    /* Increased left/right padding for more clickable space */
-    padding: 0.5rem 1.6rem;
+    padding: 0.3rem 1.25rem; /* reduced again */
     transition: all 0.3s ease;
     font-weight: 500;
 }
@@ -1872,7 +1885,7 @@ h2 {
 /* ============================================= */
 .confirmation-page {background:var(--brand-color); min-height:100vh; display:flex; flex-direction:column;}
 .confirmation-main {flex:1 0 auto;}
-.confirmation-banner {background: #f5f5f5; /* soft teal variant */ padding:6.5rem 0 3.5rem; text-align:center;}
+.confirmation-banner {background: #f5f5f5; /* soft teal variant */ padding:14.5rem 0 3.5rem; text-align:center;}
 .confirmation-banner .narrow {max-width:960px;}
 .confirmation-title {font-size:2.75rem; line-height:1.15; color:#3b3f42; font-weight:600; margin-bottom:1rem;}
 .confirmation-title .celebrate {font-size:2.2rem;}

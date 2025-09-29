@@ -68,7 +68,6 @@
         "sameAs": [
             "https://facebook.com/mydubaimove",
             "https://instagram.com/mydubaimove",
-            "https://linkedin.com/company/mydubaimove"
         ]
     }
     </script>
@@ -76,22 +75,23 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-brand">
-            <img style="max-height: 46px;" src="images/logo.png" alt="logo">
-            <span class="logo-font">My Dubai Move</span>
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <img style="max-height: 46px;" src="images/logo.png" alt="logo">
+                <span class="logo-font">My Dubai Move</span>
+            </div>
+            <div class="nav-toggle" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="book-now.html" class="book-now">Book Now</a></li>
+            </ul>
         </div>
-        <div class="nav-toggle" >
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-            <li><a href="book-now.html" class="book-now">Book Now</a></li>
-        </ul>
     </nav>
     <style></style>
       
@@ -100,8 +100,9 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="logo-font animate-text"> My Dubai Move</h1>
-            <h2 class="animate-text" >Expert Guidance for Your Smooth Transition to Dubai</h2>
-            <p class="animate-text">Welcome to MyDubaiMove – Dubai's premier relocation service. We provide comprehensive support for families and individuals moving to Dubai, offering expert guidance in visas, housing, schooling, and cultural integration.</p>
+            <p class="animate-text hero-intro">Welcome to My Dubai Move – the boutique relocation services that make your family’s transition to Dubai smoother, simpler, and more personal.</p>
+            <p class="animate-text">Moving your whole life to Dubai is an exciting opportunity — but it also comes with complex decisions. From housing and schooling to understanding neighbourhoods, government requirements, and daily life logistics, there’s a lot to navigate.</p>
+            <p class="animate-text">That’s where I come in. At My Dubai Move, I provide expert relocation coaching and practical guidance for families. My services are designed to save you time, reduce stress, and ensure your move is efficient, informed, and well-planned.</p>
             <div class="hero-features">
                 <div class="feature">
                     <i class="fas fa-check-circle"></i>
@@ -233,7 +234,7 @@
 
 
   <!-- Book Now CTA Section -->
-  <section id="book" class="book-cta">
+  <!-- <section id="book" class="book-cta">
     <div class="container">
         <h2 class="primary-font">Ready to Start Your Dubai Journey?</h2>
         <p class="section-subtitle">Schedule your consultation and get expert guidance for your relocation</p>
@@ -253,7 +254,38 @@
         </div>
         <a href="book-now.html" class="cta-button">Book Your Consultation</a>
     </div>
-</section>
+</section> -->
+
+
+    <!-- About Me Section -->
+    <section class="about-me-section">
+        <div class="container about-me-grid">
+            <div class="about-me-text">
+                <h2 class="primary-font">About Me</h2>
+                <p>I’m Réka Marton — a forever expat, a Dubai professional, and a mother of three, who understands both the excitement and overwhelm of starting over in a new country.</p>
+                <p>Because I’ve lived this journey myself, I know the questions, concerns, and hopes that come with relocating. My goal is to give you clarity, confidence, and a sense of home from day one.</p>
+                <h3 class="subhead">My Approach</h3>
+                <p>I focus on trust, transparency, and genuine connection, offering guidance that feels personal and relatable rather than transactional.</p>
+                <div class="about-next">
+                    <h3 class="subhead whats-next">What’s Next</h3>
+                    <p class="next-line">Book your free 30-minute consultation (<a href="https://calendly.com/mydubaimove/consultation" class="inline-link" target="_blank" rel="noopener">Calendly</a>)</p>
+                    <ul class="contact-inline">
+                        <li>📧 <a href="mailto:info@mydubaimove.com">info@mydubaimove.com</a></li>
+                        <li>📱 <a href="https://wa.me/971588241580" target="_blank" rel="noopener">+971 58 824 1580</a></li>
+                        <li>📸 <a href="https://www.instagram.com/my.dubai.move" target="_blank" rel="noopener">@my.dubai.move</a></li>
+                    </ul>
+                    <p class="closing-line small">I’d love to hear your story and help you write your Dubai chapter.</p>
+
+                    <div class="inline-cta-btn"><a href="book-confirmation.html" class="cta-button soft" style="padding:.9rem 2.2rem; font-size:.95rem;">Book Now</a></div>
+                </div>
+            </div>
+            <div class="about-me-card">
+                <div class="portrait-frame">
+                    <div class="portrait" role="img" aria-label="Réka Marton – Dubai relocation expert" style="background-image:url('images/abou-me.jpg');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- About Section -->
@@ -585,7 +617,7 @@
                     <div class="footer-links-grid">
                         <ul>
                             <li><a href="#home">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
                             <li><a href="#services">Our Services</a></li>
                             <li><a href="#reviews">Success Stories</a></li>
                         </ul>
